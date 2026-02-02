@@ -1,0 +1,22 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  /*
+* Created with https://www.css-gradient.com
+* Gradient link: https://www.css-gradient.com/?c1=beb4ff&c2=feacac&gt=l&gd=dtl
+*/
+  align-items: center;
+  flex-direction: column;
+  background: #beb4ff;
+  background: linear-gradient(315deg, #beb4ff, #feacac);
+  display: flex;
+  font-family: "corinthia";
+  text-align: center;
+}
+
+h1 {
+  font-family: "corinthia";
+}
