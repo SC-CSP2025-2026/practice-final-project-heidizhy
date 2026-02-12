@@ -17,6 +17,78 @@ body {
   text-align: center;
 }
 
+.app {
+  width: 90%;
+  max-width: 700px;
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(10px);
+
+  padding: 32px;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+
+  text-align: center;
+}
+
 h1 {
   font-family: "corinthia";
+  font-size: 64px;
+  margin-bottom: 25px;
+}
+
+.search-row {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.title-input {
+  padding: 12px 16px;
+  width: 60%;
+  font-size: 16px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+.title-input:focus {
+  outline: none;
+  border-color: #888;
+  box-shadow: 0 0 0 3px rgba(190, 180, 255, 0.4);
+}
+
+#search-btn {
+  padding: 12px 18px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+
+  background: #000;
+  color: #fff;
+}
+
+#search-btn:hover {
+  opacity: 0.85;
+}
+
+/* results */
+.books-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+.books-list li {
+  background: white;
+  padding: 12px 14px;
+  border-radius: 12px;
+  margin-bottom: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08);
+}
+
+.books-list strong {
+  display: block;
+  font-size: 16px;
 }

@@ -2,6 +2,14 @@ const searchInput = document.querySelector(".title-input");
 const booksList = document.querySelector(".books-list");
 const searchButton = document.querySelector("#search-btn");
 
+const options = {
+  method: "GET",
+  headers: {
+    "X-API-Key":
+      "7c5e2ffb5a92a06aeafdce17c661d80352060cbc89441ab74e82150516b2d72c",
+  },
+};
+
 const searchBooks = async (searchTerm) => {
   if (!searchTerm) {
     alert("Please enter a book title");
@@ -9,14 +17,6 @@ const searchBooks = async (searchTerm) => {
   }
 
   const url = `https://student-api-proxy.onrender.com/api/open-library2.p.rapidapi.com/search_title/${searchTerm}`;
-
-  const options = {
-    method: "GET",
-    headers: {
-      "X-API-Key":
-        "7c5e2ffb5a92a06aeafdce17c661d80352060cbc89441ab74e82150516b2d72c",
-    },
-  };
 
   booksList.innerHTML = "Loading...";
 
